@@ -1,5 +1,5 @@
-import { HashedPasswordVO } from '../value-objects/PasswordVO';
-import { PasswordVO } from '../value-objects/HashedPasswordVO';
+import { HashedPasswordVO } from '../value-objects/HashedPasswordVO';
+import { PasswordVO } from '../value-objects/PasswordVO';
 
 export interface IHashingService {
     hashPassword(password: PasswordVO): HashedPasswordVO;
