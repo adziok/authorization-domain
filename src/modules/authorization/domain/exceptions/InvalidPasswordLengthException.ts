@@ -2,6 +2,6 @@ import { BaseDomainException } from '../../../../shared/interfaces/BaseDomainExc
 
 export class InvalidPasswordLengthException extends BaseDomainException {
     constructor(opts: { min: number; max: number }) {
-        super(`Password should have length between ${opts.max} and ${opts.max}`);
+        super(`Password should have length between ${opts.min} and ${opts.max}`);
     }
 }
